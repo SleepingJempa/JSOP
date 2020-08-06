@@ -52,25 +52,25 @@ class MergeSort
         {
             if (listA[indexA] < listB[indexB])
             {
-                result.push(a);
+                result.push(listA[indexA]);
                 indexA++;
             }
             else
             {
-                result.push(b);
+                result.push(listB[indexB]);
                 indexB++;
             }
         }
 
         while (indexA < listA.length)
         {
-            result.push(a);
+            result.push(listA[indexA]);
             indexA++;
         }
 
         while (indexB < listB.length)
         {
-            result.push(b);
+            result.push(listB[indexB]);
             indexB++;
         }
         return result;
