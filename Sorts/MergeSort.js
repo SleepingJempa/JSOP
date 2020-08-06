@@ -77,3 +77,6 @@ class MergeSort
     }
 
 }
+
+let ms = new MergeSort([3,2,3,5,1]);
+console.log(ms.list);
