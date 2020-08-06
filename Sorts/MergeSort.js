@@ -9,8 +9,8 @@ class MergeSort
      */
     constructor(list, compare)
     {
-        this._list = sort(list);
-        initilize(compare);
+        this._list = this.sort(list);
+        this.initilize(compare);
     }
 
     initilize(compare)
@@ -47,9 +47,9 @@ class MergeSort
         }
         else
         {
-            return merge(   
-                sort(list.slice(0, list.length / 2)),
-                sort(list.slice(list.length / 2, this.length))    
+            return this.merge(   
+                this.sort(list.slice(0, list.length / 2)),
+                this.sort(list.slice(list.length / 2, this.length))    
                         );
         } 
     }
