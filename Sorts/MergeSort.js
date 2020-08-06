@@ -13,4 +13,9 @@ class MergeSort
         this._compare = compare;
     }
 
+    get list()
+    {
+        return this._list;
+    }
+
 }
