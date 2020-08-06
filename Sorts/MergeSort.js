@@ -5,27 +5,10 @@ class MergeSort
     /**
      * 
      * @param {Array} list 
-     * @param {function} compare 
      */
-    constructor(list, compare)
+    constructor(list)
     {
         this._list = this.sort(list);
-        this.initilize(compare);
-    }
-
-    initilize(compare)
-    {
-        if (typeof compare === 'function')
-        {
-            this._compare = compare;
-        }
-        else
-        {
-            this._compare = function ascending(a, b)
-            {
-                return a < b;
-            }
-        }
     }
 
     get list()
@@ -67,7 +50,7 @@ class MergeSort
 
         while (indexA < listA.length && indexB < listB.length)
         {
-            if (this._compare(listA[indexA], listB[indexB]))
+            if (listA[indexA] < listB[indexB])
             {
                 result.push(a);
                 indexA++;
