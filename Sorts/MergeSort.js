@@ -10,7 +10,22 @@ class MergeSort
     constructor(list, compare)
     {
         this._list = sort(list);
-        this._compare = compare;
+        initilize(compare);
+    }
+
+    initilize(compare)
+    {
+        if (typeof compare === 'function')
+        {
+            this._compare = compare;
+        }
+        else
+        {
+            this._compare = function ascending(a, b)
+            {
+                return a < b;
+            }
+        }
     }
 
     get list()
