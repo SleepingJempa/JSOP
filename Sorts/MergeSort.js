@@ -61,9 +61,9 @@ class MergeSort
      */
     merge(listA, listB)
     {
-        result = [];
-        indexA = 0;
-        indexB = 0;
+        let result = [];
+        let indexA = 0;
+        let indexB = 0;
 
         while (indexA < listA.length && indexB < listB.length)
         {
