@@ -59,3 +59,8 @@ class HashTable
         return this.data[index];
     }
 }
+
+let ht = new HashTable(12);
+ht.set('hello', 'hi');
+console.log(ht.data);
+console.log(ht.get('hello'));
