@@ -9,6 +9,7 @@ class HashTable
     constructor(size)
     {
         this._size = size;
+        this._data = new Array(size);
     }
 
     get size()
