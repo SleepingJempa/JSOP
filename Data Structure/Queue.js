@@ -2,7 +2,29 @@ class Stack
 
 
 {
-    
+    constructor()
+    {
+
+    }
+
+    peek()
+    {
+
+    }
+
+    /**
+     * 
+     * @param {*} value 
+     */
+    enqueue(value)
+    {
+
+    }
+
+    dequeue()
+    {
+        
+    }
 }
 
 
