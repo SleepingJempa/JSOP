@@ -26,17 +26,16 @@ class LinkedList
 
     append(value)
     {
+        let node = new Node(value, null);
         if (this.length == 0)
         {
-            let node = new Node(value, null);
-            this.tail = this.head = node;
+            this.head = node;
         }
         else
         {
-            let node = new Node(value, null);
             this.tail.next = node;
-            this.tail = node;
         }
+        this.tail = node;
         this.length++;
         return this;
     }
@@ -44,8 +43,18 @@ class LinkedList
     prepend(value)
     {
         let node = new Node(value, head);
+        if (this.length == 0)
+        {
+            this.tail = this.head = node;
+        }
+        else
+        {
+            node.next = this.head;
+            this.head = node;
+        }
         this.head = node;
-        this._length++;
+        this.length++;
+        return this;
     }
 
     remove(index)
