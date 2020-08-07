@@ -19,6 +19,17 @@ class LinkedList
         this._tail = this._head;
         this._length = 1;
     }
+
+    /**
+     * 
+     * @param {Node} head_node 
+     */
+    constructor(head_node)
+    {
+        this._head = head_node;
+        this._tail = head_node;
+        this._length = 1;
+    }
 }
 
 
