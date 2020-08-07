@@ -49,4 +49,14 @@ class Node
         this._value = value;
         this._next = next;
     }
+
+    get value()
+    {
+        return this._value;
+    }
+
+    get next()
+    {
+        return this._next;
+    }
 }
