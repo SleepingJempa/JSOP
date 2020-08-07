@@ -11,7 +11,7 @@ class Stack
 
     peek()
     {
-
+        return this.first;
     }
 
     /**
