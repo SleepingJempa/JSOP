@@ -23,14 +23,14 @@ class Queue
         let node = new Node(value, null, null);
         if (this.length == 0)
         {
-            this.last = node;
+            this.first = node;
         }
         else
         {
-            this.first.prev = node;
-            node.next = this.first;
+            this.last.next = node;
+            node.prev = this.last;
         }
-        this.first = node;
+        this.last = node;
         this.length++;
         return this;
     }
