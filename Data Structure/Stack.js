@@ -75,6 +75,7 @@ class Node
 // Test
 let s = new Stack();
 s.push(1).push(4);
+console.log(s);
 s.pop();
 console.log(s.pop());
 console.log(s.pop());
