@@ -40,6 +40,13 @@ class LinkedList
     {
         return this._head;
     }
+
+    append(value)
+    {
+        let node = new Node(value, null);
+        this.tail.next = node;
+        this.tail = node;
+    }
 }
 
 
