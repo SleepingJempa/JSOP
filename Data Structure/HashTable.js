@@ -37,5 +37,16 @@ class HashTable
 
         return value;
     }
-
+        
+    /**
+     * 
+     * @param {string} key
+     * @param {*} value 
+     */
+    set(key, value)
+    {
+        let index = this.hash(key);
+        this.data[index] = value;
+    }
+    
 }
