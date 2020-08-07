@@ -26,10 +26,19 @@ class LinkedList
 
     append(value)
     {
-        let node = new Node(value, null);
-        this.tail.next = node;
-        this.tail = node;
-        this._length++;
+        if (this.length == 0)
+        {
+            let node = new Node(value, null);
+            this.tail = this.head = node;
+        }
+        else
+        {
+            let node = new Node(value, null);
+            this.tail.next = node;
+            this.tail = node;
+        }
+        this.length++;
+        return this;
     }
 
     prepend(value)
