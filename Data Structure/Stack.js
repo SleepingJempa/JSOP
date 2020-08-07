@@ -27,7 +27,17 @@ class Stack
 
     pop()
     {
-
+        if (this.length == 0)
+        {
+            return undefined;
+        }
+        else
+        {
+            let value = this.top.value;
+            this.top = this.top.prev;
+            this.top.next = null;
+            return value;
+        }
     }
 }
 
