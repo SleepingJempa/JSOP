@@ -37,7 +37,22 @@ class Queue
 
     dequeue()
     {
-
+        if (this.length == 0)
+        {
+            return undefined;
+        }
+        else
+        {
+            let value = this.first.value;
+            let node = this.first.next;
+            if (node)
+            {
+                node.prev = null;
+            }
+            this.first = node;
+            this.length--;
+            return value;
+        }
     }
 }
 
@@ -68,6 +83,4 @@ class Node
 
 // Test
 let q = new Queue();
-q.enqueue(2);
-q.enqueue(3);
-console.log(q);
+q.dequeue();
