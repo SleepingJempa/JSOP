@@ -23,7 +23,7 @@ class HashTable
      */
     hash(key)
     {
-        value = 0;
+        let value = 0;
 
         // Simplest hash function
         for (let i = 0; i < key.length; i++) {
@@ -31,5 +31,4 @@ class HashTable
         }
 
         return value;
-    }
 }
