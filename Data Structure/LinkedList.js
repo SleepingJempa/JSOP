@@ -4,14 +4,14 @@ class LinkedList
 {
     constructor()
     {
-        this.head = null;
-        this.tail = null;
+        this.head = undefined;
+        this.tail = undefined;
         this.length = 0;
     }
 
     append(value)
     {
-        let node = new Node(value, null);
+        let node = new Node(value, undefined);
         if (this.length == 0)
         {
             this.head = node;
@@ -27,14 +27,10 @@ class LinkedList
 
     prepend(value)
     {
-        let node = new Node(value, head);
+        let node = new Node(value, this.head);
         if (this.length == 0)
         {
             this.tail = node;
-        }
-        else
-        {
-            node.next = this.head;
         }
         this.head = node;
         this.length++;
@@ -89,4 +85,4 @@ let ll = new LinkedList();
 ll.append(2);
 ll.append(3);
 ll.append(1);
-console.log(ll);
+ll.append(4);
