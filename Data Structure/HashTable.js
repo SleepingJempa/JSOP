@@ -10,4 +10,9 @@ class HashTable
     {
         this._size = size;
     }
+
+    get size()
+    {
+        return this._size;
+    }
 }
