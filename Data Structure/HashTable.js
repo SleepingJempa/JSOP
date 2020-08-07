@@ -98,5 +98,7 @@ class HashTable
 let ht = new HashTable(2);
 ht.set('c', 'C');
 ht.set('a', 'A');
+ht.set('b', 32);
 console.log(ht.data);
 console.log(ht.get('a'));
+console.log(ht.keys());
