@@ -31,4 +31,5 @@ class HashTable
         }
 
         return value;
+    }
 }
