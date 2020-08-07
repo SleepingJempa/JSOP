@@ -9,6 +9,10 @@ class LinkedList
         this._length = 0;
     }
 
+    /**
+     * 
+     * @param {*} head_value 
+     */
     constructor(head_value)
     {
         this._head = new Node(head_value, null);
@@ -24,5 +28,5 @@ class Node
 
 
 {
-
+    
 }
