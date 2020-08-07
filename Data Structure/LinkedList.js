@@ -4,3 +4,13 @@ class LinkedList
 {
 
 }
+
+
+
+
+class Node
+
+
+{
+    
+}
