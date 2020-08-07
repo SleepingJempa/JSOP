@@ -30,6 +30,16 @@ class LinkedList
         this._tail = head_node;
         this._length = 1;
     }
+
+    get tail()
+    {
+        return this._tail;
+    }
+
+    get head()
+    {
+        return this._head;
+    }
 }
 
 
