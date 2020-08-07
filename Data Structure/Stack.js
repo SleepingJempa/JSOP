@@ -15,7 +15,11 @@ class Stack
 
     push(value)
     {
-        
+        let node = new Node(value, null);
+        this.top.next = node;
+        this.top = node;
+        this.length++;
+        return this;
     }
 
     pop()
