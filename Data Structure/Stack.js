@@ -35,7 +35,10 @@ class Stack
         {
             let value = this.top.value;
             this.top = this.top.prev;
-            this.top.next = null;
+            if(this.top)
+            {
+                this.top.next = null;
+            }
             this.length--;
             return value;
         }
@@ -64,3 +67,14 @@ class Node
         this.next = next;
     }
 }
+
+
+
+
+
+// Test
+let s = new Stack();
+s.push(1).push(4);
+s.pop();
+console.log(s.pop());
+console.log(s.pop());
