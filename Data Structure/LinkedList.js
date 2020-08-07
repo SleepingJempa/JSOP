@@ -28,5 +28,14 @@ class Node
 
 
 {
-    
+    /**
+     * 
+     * @param {*} value 
+     * @param {Node} next 
+     */
+    constructor(value, next)
+    {
+        this._value = value;
+        this._next = next;
+    }
 }
