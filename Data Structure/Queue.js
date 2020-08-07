@@ -4,7 +4,9 @@ class Stack
 {
     constructor()
     {
-
+        this.first = null;
+        this.last = null;
+        this.length = 0;
     }
 
     peek()
@@ -23,7 +25,7 @@ class Stack
 
     dequeue()
     {
-        
+
     }
 }
 
