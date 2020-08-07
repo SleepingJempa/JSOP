@@ -4,24 +4,9 @@ class LinkedList
 {
     constructor()
     {
-        this._head = null;
-        this._tail = null;
-        this._length = 0;
-    }
-
-    get tail()
-    {
-        return this._tail;
-    }
-
-    get head()
-    {
-        return this._head;
-    }
-
-    get length()
-    {
-        return this._length;
+        this.head = null;
+        this.tail = null;
+        this.length = 0;
     }
 
     append(value)
@@ -29,14 +14,14 @@ class LinkedList
         let node = new Node(value, null);
         if (this.length == 0)
         {
-            this._head = node;
+            this.head = node;
         }
         else
         {
-            this._tail._next = node;
+            this.tail.next = node;
         }
-        this._tail = node;
-        this._length++;
+        this.tail = node;
+        this.length++;
         return this;
     }
 
@@ -45,14 +30,14 @@ class LinkedList
         let node = new Node(value, head);
         if (this.length == 0)
         {
-            this._tail = node;
+            this.tail = node;
         }
         else
         {
-            node._next = this.head;
+            node.next = this.head;
         }
-        this._head = node;
-        this._length++;
+        this.head = node;
+        this.length++;
         return this;
     }
 
@@ -61,8 +46,8 @@ class LinkedList
         if (index == 0)
         {
             let node = this.head.next;
-            delete this._head;
-            this._head = node;
+            delete this.head;
+            this.head = node;
         }
         else
         {
@@ -72,8 +57,8 @@ class LinkedList
                 node = node.next;
             }
             let temp = node.next.next;
-            delete node._next;
-            node._next = temp;
+            delete node.next;
+            node.next = temp;
         }
     }
 }
@@ -92,28 +77,8 @@ class Node
      */
     constructor(value, next)
     {
-        this._value = value;
-        this._next = next;
-    }
-
-    get value()
-    {
-        return this._value;
-    }
-
-    get next()
-    {
-        return this._next;
-    }
-
-    set value(value)
-    {
-        this._value = value;
-    }
-
-    set next(next)
-    {
-        this._next = next;
+        this.value = value;
+        this.next = next;
     }
 }
 
