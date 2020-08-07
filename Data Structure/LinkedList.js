@@ -19,6 +19,11 @@ class LinkedList
         return this._head;
     }
 
+    get length()
+    {
+        return this._length;
+    }
+
     append(value)
     {
         let node = new Node(value, null);
