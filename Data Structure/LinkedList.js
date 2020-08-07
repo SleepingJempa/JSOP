@@ -29,14 +29,14 @@ class LinkedList
         let node = new Node(value, null);
         if (this.length == 0)
         {
-            this.head = node;
+            this._head = node;
         }
         else
         {
-            this.tail.next = node;
+            this._tail.next = node;
         }
-        this.tail = node;
-        this.length++;
+        this._tail = node;
+        this._length++;
         return this;
     }
 
@@ -45,15 +45,14 @@ class LinkedList
         let node = new Node(value, head);
         if (this.length == 0)
         {
-            this.tail = this.head = node;
+            this._tail = node;
         }
         else
         {
             node.next = this.head;
-            this.head = node;
         }
-        this.head = node;
-        this.length++;
+        this._head = node;
+        this._length++;
         return this;
     }
 
@@ -63,7 +62,7 @@ class LinkedList
         {
             let node = this.head.next;
             delete this.head;
-            this.head = node;
+            this._head = node;
         }
         else
         {
@@ -117,3 +116,12 @@ class Node
         this._next = next;
     }
 }
+
+
+
+// Test
+let ll = new LinkedList();
+ll.append(2);
+ll.append(3);
+ll.append(1);
+console.log(ll);
