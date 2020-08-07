@@ -76,6 +76,23 @@ class HashTable
             return undefined;
         }
     }
+    
+    keys()
+    {
+        let keysArray = [];
+
+        for (let i = 0; i < this.data.length; i++)
+        {
+            if (this.data[i]) {
+                for (let j = 0; j < this.data[i].length; j++)
+                {
+                    keysArray.push(this.data[i][j][0]);
+                }
+            }
+        }
+
+        return keysArray;
+    }
 }
 
 let ht = new HashTable(2);
