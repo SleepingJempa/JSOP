@@ -39,23 +39,29 @@ class LinkedList
 
     remove(index)
     {
+        let value;
+
         if (index == 0)
         {
+            value = this.head.value;
             let node = this.head.next;
-            delete this.head;
             this.head = node;
         }
         else
         {
             let node = this.head;
+
             while(--index)
             {
                 node = node.next;
             }
+
+            value = node.next.value;
             let temp = node.next.next;
-            delete node.next;
             node.next = temp;
         }
+        
+        return value;
     }
 }
 
