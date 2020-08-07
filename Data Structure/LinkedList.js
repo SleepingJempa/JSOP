@@ -47,6 +47,12 @@ class LinkedList
         this.tail.next = node;
         this.tail = node;
     }
+
+    prepend(value)
+    {
+        let node = new Node(value, head);
+        this.head = node;
+    }
 }
 
 
