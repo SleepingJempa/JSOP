@@ -36,6 +36,7 @@ class Stack
             let value = this.top.value;
             this.top = this.top.prev;
             this.top.next = null;
+            this.length--;
             return value;
         }
     }
