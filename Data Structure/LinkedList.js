@@ -46,12 +46,14 @@ class LinkedList
         let node = new Node(value, null);
         this.tail.next = node;
         this.tail = node;
+        this._length++;
     }
 
     prepend(value)
     {
         let node = new Node(value, head);
         this.head = node;
+        this._length++;
     }
 }
 
