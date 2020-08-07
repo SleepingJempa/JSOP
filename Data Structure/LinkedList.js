@@ -33,6 +33,27 @@ class LinkedList
         this.head = node;
         this._length++;
     }
+
+    remove(index)
+    {
+        if (index == 0)
+        {
+            let node = this.head.next;
+            delete this.head;
+            this.head = node;
+        }
+        else
+        {
+            let node = this.head;
+            while(--index)
+            {
+                node = node.next;
+            }
+            let temp = node.next.next;
+            delete node.next;
+            node.next = temp;
+        }
+    }
 }
 
 
