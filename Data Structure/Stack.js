@@ -26,7 +26,21 @@ class Stack
 
 
 
+
+
 class Node
+
+
 {
 
+    /**
+     * 
+     * @param {*} value 
+     * @param {Node} next 
+     */
+    constructor(value, next)
+    {
+        this.value = value;
+        this.next = next;
+    }
 }
