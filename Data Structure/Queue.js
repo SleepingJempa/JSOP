@@ -20,7 +20,18 @@ class Stack
      */
     enqueue(value)
     {
-
+        let node = new Node(value, null, null);
+        if (this.length == 0)
+        {
+            this.last = node;
+        }
+        else
+        {
+            this.first.prev = node;
+            node.next = this.first;
+        }
+        this.first = node;
+        return this;
     }
 
     dequeue()
