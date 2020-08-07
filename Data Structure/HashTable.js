@@ -46,7 +46,11 @@ class HashTable
     set(key, value)
     {
         let index = this.hash(key);
-        this.data[index] = value;
+        if (!this.data[index]) {
+            this.data[index] = [];
+        }
+        this.data[index].push([key, value]);
+        return this.data;
     }
 
     /**
@@ -56,11 +60,26 @@ class HashTable
     get(key)
     {
         let index = this.hash(key);
-        return this.data[index];
+        let bucket = this.data[index];
+        if (bucket)
+        {
+            for (let i = 0; i < bucket.length; i++)
+            {
+                if (bucket[i][0] === key)
+                {
+                    return bucket[i][1];
+                }
+            } 
+        }
+        else
+        {
+            return undefined;
+        }
     }
 }
 
-let ht = new HashTable(12);
-ht.set('hello', 'hi');
+let ht = new HashTable(2);
+ht.set('c', 'C');
+ht.set('a', 'A');
 console.log(ht.data);
-console.log(ht.get('hello'));
+console.log(ht.get('a'));
