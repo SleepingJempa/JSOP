@@ -59,4 +59,14 @@ class Node
     {
         return this._next;
     }
+
+    set value(value)
+    {
+        this._value = value;
+    }
+
+    set next(next)
+    {
+        this._next = next;
+    }
 }
