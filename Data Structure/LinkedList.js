@@ -33,7 +33,7 @@ class LinkedList
         }
         else
         {
-            this._tail.next = node;
+            this._tail._next = node;
         }
         this._tail = node;
         this._length++;
@@ -49,7 +49,7 @@ class LinkedList
         }
         else
         {
-            node.next = this.head;
+            node._next = this.head;
         }
         this._head = node;
         this._length++;
@@ -61,7 +61,7 @@ class LinkedList
         if (index == 0)
         {
             let node = this.head.next;
-            delete this.head;
+            delete this._head;
             this._head = node;
         }
         else
@@ -72,8 +72,8 @@ class LinkedList
                 node = node.next;
             }
             let temp = node.next.next;
-            delete node.next;
-            node.next = temp;
+            delete node._next;
+            node._next = temp;
         }
     }
 }
