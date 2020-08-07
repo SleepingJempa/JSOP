@@ -49,6 +49,10 @@ class Queue
             {
                 node.prev = null;
             }
+            else
+            {
+                this.last = null;
+            }
             this.first = node;
             this.length--;
             return value;
@@ -83,4 +87,11 @@ class Node
 
 // Test
 let q = new Queue();
+q.enqueue(2);
+console.log(q);
 q.dequeue();
+console.log(q);
+console.log(q.dequeue());
+console.log(q);
+q.enqueue(1).enqueue(1).enqueue(5);
+console.log(q);
