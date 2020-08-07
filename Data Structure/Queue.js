@@ -1,4 +1,4 @@
-class Stack
+class Queue
 
 
 {
@@ -31,6 +31,7 @@ class Stack
             node.next = this.first;
         }
         this.first = node;
+        this.length++;
         return this;
     }
 
@@ -62,3 +63,11 @@ class Node
         this.next = next;
     }
 }
+
+
+
+// Test
+let q = new Queue();
+q.enqueue(2);
+q.enqueue(3);
+console.log(q);
