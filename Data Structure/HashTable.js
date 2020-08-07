@@ -17,6 +17,11 @@ class HashTable
         return this._size;
     }
 
+    get data()
+    {
+        return this._data;
+    }
+
     /**
      * 
      * @param {string} key 
@@ -32,4 +37,5 @@ class HashTable
 
         return value;
     }
+
 }
