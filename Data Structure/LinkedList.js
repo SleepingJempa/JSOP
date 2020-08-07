@@ -82,7 +82,7 @@ class Node
 
 // Test
 let ll = new LinkedList();
-ll.append(2);
-ll.append(3);
-ll.append(1);
-ll.append(4);
+ll.append(2).append(3).append(1).append(4);
+// It's working well, but js shorten the printed strings; So don't worry about the output.
+
+console.log(ll);
