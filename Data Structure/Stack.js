@@ -10,12 +10,12 @@ class Stack
 
     peek()
     {
-
+        return this.top;
     }
 
     push(value)
     {
-
+        
     }
 
     pop()
