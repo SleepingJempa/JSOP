@@ -2,7 +2,20 @@ class BinarySearchTree
 
 
 {
+    constructor()
+    {
+        
+    }
 
+    insert()
+    {
+
+    }
+
+    lookup()
+    {
+        
+    }
 }
 
 
