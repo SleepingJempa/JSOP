@@ -7,14 +7,32 @@ class BinarySearchTree
         
     }
 
-    insert()
+    /**
+     * 
+     * @param {*} value 
+     */
+    insert(value)
     {
+        let node = new Node(value);
 
+        if (this.root == null)
+        {
+            this.root = node;
+        }
+        else
+        {
+            let trav = this.root;
+
+            while(true)
+            {
+                
+            }
+        }
     }
 
     lookup()
     {
-        
+
     }
 }
 
