@@ -25,7 +25,7 @@ class BinarySearchTree
 
             while(true)
             {
-                
+
             }
         }
     }
@@ -44,13 +44,11 @@ class Node
 {
     /**
      * 
-     * @param {*} value 
-     * @param {Node} parent 
+     * @param {*} value
      */
-    constructor(value, parent)
+    constructor(value)
     {
         this.value = value;
-        this.parent = parent;
         this.left = this.rigth = null;
     }
 }
