@@ -1,7 +1,7 @@
-import node from './node'
-import graph from './graph'
+import Node from './node/index.js'
+import Graph from './graph/index.js'
 
 export {
-    None,
+    Node,
     Graph
 }
