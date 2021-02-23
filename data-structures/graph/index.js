@@ -1,4 +1,4 @@
-const Node = require('data-structures/node')
+import Node from '../node/index.js'
 
 class Graph {
     /**
@@ -84,6 +84,13 @@ class Graph {
 
         return this.get(i).adjacentList().includes(j)
     }
+
+    /**
+     * 
+     */
+    vertices() {
+        return this._vertices
+    }
 }
 
-module.exports = Graph
+export default Graph
