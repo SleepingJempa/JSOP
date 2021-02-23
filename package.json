@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "app-module-path": "^2.2.0"
+  },
+  "name": "jsop",
+  "description": "Javascript Overpowered",
+  "version": "1.0.0",
+  "main": "run.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SleepingJempa/JSOP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SleepingJempa/JSOP/issues"
+  },
+  "homepage": "https://github.com/SleepingJempa/JSOP#readme",
+  "type": "module"
+}

@@ -50,4 +50,4 @@ class Node {
     }
 }
 
-module.exports = Node
+export default Node

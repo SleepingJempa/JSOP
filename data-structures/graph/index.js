@@ -1,4 +1,4 @@
-const Node = require('data-structures/node')
+import Node from 'data-structures/node'
 
 class Graph {
     /**
@@ -86,4 +86,4 @@ class Graph {
     }
 }
 
-module.exports = Graph
+export default Graph
