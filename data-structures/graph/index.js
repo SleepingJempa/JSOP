@@ -54,8 +54,11 @@ class Graph {
             throw new Error(`Index out of bounds`)
         }
 
-        this.get(i).connect(j)
-        this.get(j).connect(i)
+        let nodeI = this.get(i)
+        let nodeJ = this.get(j)
+
+        this.get(i).connect(nodeJ)
+        this.get(j).connect(nodeI)
     }
 
     /**

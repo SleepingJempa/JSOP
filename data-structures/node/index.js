@@ -21,7 +21,7 @@ class Node {
     /**
      * Return the list of adjacent nodes
      */
-    adjacentList() {
+    adj() {
         return this._adj
     }
 
